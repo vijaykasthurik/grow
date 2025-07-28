@@ -813,7 +813,7 @@ export default function Page() { // Renamed from MainAppContent to Page as per o
 
     try {
       // ✅ 1. Create Razorpay order (updated endpoint)
-      const response = await fetch("http://localhost:5000/api/shop/create-order", {
+      const response = await fetch("https://growbackend.onrender.com/api/shop/create-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: amountInPaise }),
@@ -846,7 +846,7 @@ export default function Page() { // Renamed from MainAppContent to Page as per o
 
           try {
             // ✅ 3. Send confirmation email (updated endpoint)
-            await fetch("http://localhost:5000/api/shop/send-confirmation", {
+            await fetch("https://growbackend.onrender.com/api/shop/send-confirmation", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
