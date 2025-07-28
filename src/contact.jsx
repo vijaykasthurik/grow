@@ -17,7 +17,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Sending...');
-    const API_BASE_URL = "http://localhost:5000"; // Corrected API base URL
+    const API_BASE_URL = "https://growbackend.onrender.com"; // Corrected API base URL
 
     try {
       const response = await fetch(`${API_BASE_URL}/contact`, { // Corrected endpoint
