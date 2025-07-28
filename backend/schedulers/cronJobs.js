@@ -4,7 +4,7 @@ const { sendOrganicTips } = require('./tipJob');
 const logger = require('../utils/logger'); // Import logger
 
 // 💧 Indoor – 8:00 AM & 6:00 PM
-cron.schedule('0 8 * * *', async () => {
+cron.schedule('30 20 * * *', async () => {
   logger.info('[NODE-CRON] Running watering reminder at 08:00 (Indoor)');
   try {
     await sendWateringReminders('Indoor');
