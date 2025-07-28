@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 // Base URL for your backend API - IMPORTANT: Ensure this is correct!
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://growbackend.onrender.com/api';
 
 // Function to get the JWT token from localStorage
 const getAuthToken = () => {
