@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://growbackend.onrender.com/api';
 const getAuthToken = () => localStorage.getItem('token');
 const API_KEY = process.env.WEATHER_API_KEY; // Your OpenWeatherMap API Key
 
